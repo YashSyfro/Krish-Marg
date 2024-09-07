@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Prices</title>
+    <link rel="stylesheet" href="marketprice.css">
+</head>
+<body>
+
+    <!-- Date picker, state, district, and market selection -->
+    <div class="header">
+        <nav>
+            <div id="back" onclick="window.history.back();">←</div>
+            <div id="heading">Market Price</div>
+        </nav>
+
+        <!-- State selection -->
+        <label for="state-select">Select State:</label>
+        <select id="state-select">
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+        </select>
+
+        <!-- District selection for Rajasthan -->
+        <label for="district-select">Select District:</label>
+        <select id="district-select">
+            <option value="Jodhpur">Jodhpur</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Ajmer">Ajmer</option>
+            <option value="Bikaner">Bikaner</option>
+            <option value="Udaipur">Udaipur</option>
+            <option value="Kota">Kota</option>
+            <option value="Jaisalmer">Jaisalmer</option>
+            <option value="Sikar">Sikar</option>
+            <option value="Barmer">Barmer</option>
+            <option value="Alwar">Alwar</option>
+            <option value="Pali">Pali</option>
+            <!-- Add more districts as needed -->
+        </select>
+
+        <!-- Date picker -->
+        <label for="date-picker">Select Date:</label>
+        <input type="date" id="date-picker" value="2024-09-07">
+        
+        <!-- Market selection -->
+        <label for="market-select">Select Market:</label>
+        <select id="market-select">
+            <option value="">Select Market</option>
+            <option value="Bilara">Bilara</option>
+            <option value="Jodhpur (Grain) (Mandor)">Jodhpur (Grain) (Mandor)</option>
+            <option value="Jodhpur (F&V) (Paota)">Jodhpur (F&V) (Paota)</option>
+            <option value="Jodhpur (Grain) (Phalodi)">Jodhpur (Grain) (Phalodi)</option>
+            <option value="Pipar City">Pipar City</option>
+            <!-- More market options -->
+        </select>
+    </div>
+
+    <!-- Table for commodity prices -->
+    <div class="price-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Commodity</th>
+                    <th>Maximum Price</th>
+                    <th>Average Price</th>
+                    <th>Minimum Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bhindi (Ladies Finger)</td>
+                    <td>₹ 3,800</td>
+                    <td>₹ 3,200</td>
+                    <td>₹ 2,600</td>
+                </tr>
+                <tr>
+                    <td>Bitter Gourd</td>
+                    <td>₹ 4,600</td>
+                    <td>₹ 4,100</td>
+                    <td>₹ 3,600</td>
+                </tr>
+                <tr>
+                    <td>Carrot</td>
+                    <td>₹ 2,100</td>
+                    <td>₹ 1,850</td>
+                    <td>₹ 1,500</td>
+                </tr>
+                <tr>
+                    <td>Potato</td>
+                    <td>₹ 4,200</td>
+                    <td>₹ 3,600</td>
+                    <td>₹ 3,200</td>
+                </tr>
+                <tr>
+                    <td>Tomato</td>
+                    <td>₹ 4,300</td>
+                    <td>₹ 4,100</td>
+                    <td>₹ 3,600</td>
+                </tr>
+                <tr>
+                    <td>Onion</td>
+                    <td>₹ 7,200</td>
+                    <td>₹ 6,900</td>
+                    <td>₹ 6,600</td>
+                </tr>
+                <tr>
+                    <td>Cauliflower</td>
+                    <td>₹ 5,000</td>
+                    <td>₹ 4,500</td>
+                    <td>₹ 4,000</td>
+                </tr>
+                <tr>
+                    <td>Cabbage</td>
+                    <td>₹ 3,200</td>
+                    <td>₹ 2,800</td>
+                    <td>₹ 2,400</td>
+                </tr>
+                <tr>
+                    <td>Green Chilli</td>
+                    <td>₹ 4,500</td>
+                    <td>₹ 4,000</td>
+                    <td>₹ 3,500</td>
+                </tr>
+                <tr>
+                    <td>Brinjal (Eggplant)</td>
+                    <td>₹ 3,500</td>
+                    <td>₹ 3,000</td>
+                    <td>₹ 2,500</td>
+                </tr>
+                <tr>
+                    <td>Capsicum</td>
+                    <td>₹ 6,000</td>
+                    <td>₹ 5,500</td>
+                    <td>₹ 5,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
